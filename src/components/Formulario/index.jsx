@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import axios from 'axios';
 
 import Error from '../Error';
 import Response from '../Response';
 import '../../css/Formulario.css';
-import { enviarFormAction } from '../../actions/formActions';
+import { enviarFormAction, validarFormAction } from '../../actions/formActions';
+import store from '../../store';
+
 
 class Formulario extends Component {
 /*Se declaran las state */ 
@@ -21,38 +23,49 @@ class Formulario extends Component {
         MessageError: 'Something is missing or the information is wrong, please check.'
     };
     
-    getValue = (e) => {
-        /*Se obtiene el objeto del evento */
-
-        console.log([e.target.name], e.target.value);
-        /* se setea el valor ingresado en el campo con el state previamente declarado */
-        /* dependiendo de la prop name de cada input es el valor que se va a setear*/
-       /* this.setState({
+    getValue = e => {
+        console.log( [e.target.name], e.target.value);
+        this.setState({
             [e.target.name]: e.target.value
-        });*/
-      
+        });
     }
 
     validateForm = (e) => {
-            e.preventDefault(); //ejecutamos esta función para que la pagina no se refresque
+        e.preventDefault(); //ejecutamos esta función para que la pagina no se refresque
             /*Se realiza la validación de los campos*/ 
             if (this.state.lastName === '' || this.state.name === '' || this.state.phone === '' || this.state.comment === '' ) {
-                this.setState({error: true}); /* Si hay un campo vacio, se asigna el valor true al state error */
+               /* this.setState({error: true});*/ /* Si hay un campo vacio, se asigna el valor true al state error */
+                store.dispatch(validarFormAction(true));
+               /* return;*/
             } else {
-                var formData = new FormData();
+                store.dispatch(validarFormAction(false));
+                const { name, lastName, email, phone, comment } = this.state;
+                console.log(name,lastName,email,phone,comment);
+                /*var formData = new FormData();
                 formData.append("fullname",this.state.name + this.state.lastName);
                 formData.append("email", this.state.email);
                 formData.append("phone",this.state.phone);
                 formData.append("comment", this.state.comment);
+*/
+                store.dispatch(enviarFormAction({
+                   name,
+                   lastName,
+                   email,
+                   phone,
+                   comment
+                }));
             }
+        
+           
+/*
             const url = '/contact.php';
             const config = {
                 headers: {
                     'content-type': 'multipart/form-data'
                 }
-            };   
+            };   */
 
-            axios.post(url,formData,config).then(response => {
+          /*  axios.post(url,formData,config).then(response => {
                 console.log("Response-Data: ", response.data);
                 const { Message } = response.data;
                 console.log("Message: ",Message);
@@ -64,7 +77,7 @@ class Formulario extends Component {
                     console.log("No es el mismo");
                     this.setState({MessageSuccess: true});
                     this.setState({MessageError: false});
-                }
+                }*/
 
                /* if (response.status === 200 && response.data != this.state.MessageError) {
                     console.log("Dentro del status 200");
@@ -81,14 +94,11 @@ class Formulario extends Component {
                         responseError: true
                     });
                 }*/
-            }).catch(error => {
+           /* }).catch(error => {
                  alert(error);
-            });    
+            });*/    
     }
 
-    sendForm = () => {
-
-    }
     render () {
         const { name, lastName, email,phone, comment } = this.state;
         return (

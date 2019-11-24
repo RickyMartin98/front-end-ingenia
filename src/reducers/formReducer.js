@@ -1,5 +1,8 @@
+/*import { initialState } from "react-redux-form";*/
+
 const initialState = {
-    name: '',
+    contacto: []
+   /* name: '',
     lastName: '',
     email: '',
     comment: '',
@@ -7,17 +10,22 @@ const initialState = {
     responseRequest: false,
     responseError: false,
     MessageSuccess: 'Thanks, we will get back at you as soon as possible.',
-    MessageError: 'Something is missing or the information is wrong, please check.'
+    MessageError: 'Something is missing or the information is wrong, please check.'*/
 };
 
-export default function (state= initialState, action) {
+export default function (state = initialState, action) {
     switch (action.type) {
         case 'VALIDAR_FORM':
             return {
+                ...state,
+                error: action.payload
+            }   
+        case 'ENVIAR_FORM': 
+            return {
+                ...state,
+               contacto: [...state.contacto, action.payload]
 
-            }
-        case 'ENVIAR_FORM':
-            return {}    
+            }    
         default:
             return state;    
     }
