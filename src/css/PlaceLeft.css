@@ -1,0 +1,59 @@
+@font-face {
+    font-family: robot_condensedlight;
+    src: url(../fonts/roboto/robotocondensed-light-webfont.woff);
+}
+@font-face {
+    font-family: robotoregular;
+    src: url(../fonts/roboto/roboto-regular-webfont.woff);
+}
+
+
+.pCenter {
+    text-align: center;
+   font-family: robot_condensedlight;
+   margin-top: 30px;
+}
+.pLeft {
+    text-align: left;
+    padding-right: 0px;
+}
+.pRight {
+    text-align: right;
+}
+.title {
+    font-family: robotoregular;
+}
+p {
+    font-family: robot_condensedlight;
+}
+.streetPlaceLeft {
+    color:#9c9c9c !important;
+  
+}
+.descriptionPlaceLeft {
+    color: #353535 !important;
+}
+.place {
+    background-image: url(../img/icons/icons.png);
+    background-position: -98px -6px;
+    background-repeat: no-repeat;
+    font-size: 25px;
+}
+
+.spanImagePlaceLeft {
+    background-image: url(../img/icons/icons.png);
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-position: -99px 0px;
+    margin-left: 3px;
+    color: transparent;
+}
+.titlePlaceLeft {
+    display: inline-block !important;
+}
+
+.titleList {
+    font-size: 10px;
+    font-family: robotoregular;
+    color: #353535;
+}

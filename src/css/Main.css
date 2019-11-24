@@ -1,0 +1,47 @@
+@font-face {
+    font-family: robot_condensedlight;
+    src: url(../fonts/roboto/robotocondensed-light-webfont.woff);
+}
+
+@font-face {
+    font-family: robotbold;
+    src: url(../fonts/roboto/roboto-bold-webfont.woff);
+}
+
+.title {
+    font-family: robotbold;
+    color: white !important;
+}
+
+.container-fluid {
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row {
+  /*  margin-right: 0px;*/
+}
+
+.contactDescription {
+    font-family: robot_condensedlight;
+    color: white !important;
+}   
+
+.main {
+    padding: 0px;
+}
+
+.contact {
+    background-color: #f37121;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+        
+    height: 270px;
+   }
+.contenedorCity {
+    padding: 0px;
+}

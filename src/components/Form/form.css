@@ -1,0 +1,89 @@
+@font-face {
+    font-family: roboto_condensedlight;
+    src: url(../../fonts/roboto/robotocondensed-light-webfont.woff);
+}
+
+form {
+    font-family: roboto_condensedlight;
+}
+.form {
+    width:50%;
+    margin: 0px 0px;
+}
+
+.bullet1 {
+    background-image: url(../../img/bg/bullet_1.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 0px;
+}
+
+.bullet2 {
+    background-image: url(../../img/bg/bullet_2.png);
+    width: 24px;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 0px;
+ 
+}
+
+.bullet3 {
+    background-image: url(../../img/bg/bullet_3.png);
+    width: 20px;
+    height: 20px;
+   margin-right: 10px;
+   font-size: 0px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+}
+.input {
+    margin-top: 11px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.span {
+    display: block;
+    width: 90%;
+}
+
+.caja {
+    width: 90%;
+    margin-left: 21px;
+}
+
+.btn {
+    color: white;
+    background-color: #f37121;
+    margin: 0px 0px;
+    width: 7%;
+    display: block;
+}
+
+.required {
+    width: 100%;
+    display: block;
+    color:  #f37121;
+    font-size: 9px;
+    padding-top: 10pxs;
+}
+.span-input {
+    font-size: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}

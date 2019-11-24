@@ -1,0 +1,24 @@
+
+.spanImagePlaceRight {
+    background-image: url(../img/icons/icons.png);
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-position: -99px 0px;
+    color: transparent;
+}
+
+.titlePlaceRight {
+    display: inline-block;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.container-place-right {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #efefee;
+    padding-left: 20px;
+}
+.streetPlaceRight {
+    color: #9c9c9c;
+}

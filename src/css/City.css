@@ -1,0 +1,29 @@
+@font-face {
+    font-family: robotbold;
+    src: url(../fonts/roboto/roboto-bold-webfont.woff);
+}
+.parraf {
+    margin: 0px;
+}
+.title {
+    font-family: robotbold;
+    color: white;
+}
+
+.telefono {
+    color:  #f37121;
+}
+
+.contenedorPadre {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}

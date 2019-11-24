@@ -1,0 +1,78 @@
+* {
+   /* box-sizing: border-box;*/
+}
+@font-face {
+    font-family: robot_condensedlight;
+    src: url(../fonts/roboto/robotocondensed-light-webfont.woff);
+}
+
+
+.form-control {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    height: 20%;
+}
+.contenedor-input {
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input-48 {
+    width: 45%;
+}
+.input-100 {
+    width: 100%;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 2px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 1px solid  darkgray;
+    font-family: robot_condensedlight;
+}
+small {
+    font-size: 10px;
+    width: 100%;
+    color: #f37121;
+    margin-left: 25px;
+}
+.boton {
+    display: block;
+    margin: auto;
+    margin-right: 2px;
+    color: white;
+    background-color: #f37121;
+}
+
+textarea {
+   max-height: 100px;
+   min-height: 100px;
+}
+
+.bullet1 {
+    background-image: url(../img/bg/bullet_1.png);
+    background-repeat: no-repeat;
+    padding-left: 13px;
+    width: 100%;
+}
+
+.bullet2 {
+    background-image: url(../img/bg/bullet_2.png);
+    background-repeat: no-repeat;
+    padding-left: 13px;
+    width: 100%;
+}
+
+.bullet3 {
+    background-image: url(../img/bg/bullet_3.png);
+    background-repeat: no-repeat;
+    padding-left: 23px;
+    padding-bottom: -5px;
+    font-family: robot_condensedlight;
+}
