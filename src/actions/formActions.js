@@ -7,6 +7,7 @@ export const enviarFormAction = datos => {
     formData.append("email", datos.email);
     formData.append("phone",datos.phone);
     formData.append("comment", datos.comment)
+    const MessageError = 'Something is missing or the information is wrong, please check.', MessageSuccess = 'Thanks, we will get back at you as soon as possible.';
 
     const url = '/contact.php';
             const config = {
@@ -17,10 +18,22 @@ export const enviarFormAction = datos => {
      
     return dispatch => {
         return       axios.post(url,formData,config).then(response => {
-            dispatch({
-                type:'ENVIAR_FORM',
-                payload: response.data
-            });
+            console.log("response antes de dispatch: ", response.data);
+            if (response.data.includes("Success")) {
+                console.log("Incluye Success");
+                dispatch({
+                    type:'ENVIAR_FORM',
+                    payload: MessageSuccess
+                });
+
+            } else {
+                console.log("Incluye error");
+                dispatch({
+                    type: 'ENVIAR_FORM',
+                    payload: MessageError
+                });
+            }
+           
         });
     };
 }

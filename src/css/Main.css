@@ -19,13 +19,12 @@
     padding-right: 0px;
 }
 
-.row {
-  /*  margin-right: 0px;*/
-}
+
 
 .contactDescription {
     font-family: robot_condensedlight;
     color: white !important;
+    text-align: center !important;
 }   
 
 .main {

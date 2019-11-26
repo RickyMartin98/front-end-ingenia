@@ -6,28 +6,28 @@ function Footer () {
         return (
             <footer className="container-fluid footer-container">
               <div className="row">
-                    <div className="col-12 col-md-6">
-                        <p className="pt-2 text-left pl-5 copy" >&copy; 2014 Ingenia Group</p>
+                    <div className="col-xs-12 col-sm-6 col-md-6">
+                        <p className="pt-2 text-center pl-5 copy" >&copy; 2014 Ingenia Group</p>
                     </div>
-                    <div className="col-12 col-md-6 mr-0">
-                    <ul>
+                    <div className="col-xs-12 col-sm-6 col-md-6 mr-0">
+                    <ul className="listSections">
                             <li className="list-item"><a>About Us</a></li>
                             <li className="list-item borderLeft"><a>Our Work</a></li>
                             <li className="list-item borderLeft"><a>Blog</a></li>
                             <li className="list-item borderLeft"><a>Jobs</a></li>
-                            <li className="list-item borderLeft"><a>Contact</a></li>
+                            <li className="list-item borderLeft active"><a>Contact</a></li>
                         </ul>
                     </div>
               </div>
               <div className="row">
-                <div className="col-12 col-md-2 pr-5 ml-5 text-center">
+                <div className="col-xs-12 col-md-6 col-lg-4 pl-2 text-center">
                    <span className="usa">us</span> <h3 className="usaTitle">Usa</h3>
                    <p className="parrafFooter">1200 18th Street NW Suite 700</p>
     
                    <p className="parrafFooter">Washington DC 20036 USA</p>
                    <p className="parrafFooter">50220900</p>
                 </div>
-                <div className="col-12 col-md-2 mexicoContainer pl-5 text-center">
+                <div className="col-xs-12 col-md-6 col-lg-4 mexicoContainer pl-2 text-center">
                     <span className="mexico">me</span> <h3 className="mexicoTitle">Mexico</h3>
                     <p className="parrafFooter">Anatole France 311</p>
                     <p className="parrafFooter">Polanco, Miguel Hidalgo</p>

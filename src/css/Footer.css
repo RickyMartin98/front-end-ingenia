@@ -191,7 +191,7 @@
 }.mexicoContainer {
     border-left-style: solid;
     border-left-width: 1px;
-    border-left-color: #666666;
+    border-left-color: #9c9c9c;
 }
 
 .list {
@@ -199,7 +199,8 @@
 }
 .list-item {
     color: #666666;
-    margin-left: -5px;
+    margin-left: -4px;
+    margin-right: px;
 }
 
 .itemlistSocial {
@@ -213,4 +214,78 @@
 }
 .policyList {
     color: #666666;
+}
+.active {
+    color: #f37121;
+}
+
+@media (max-width: 750px) {
+    .policyList {
+        margin-right: 20%;
+    }
+
+    .itemlistSocial {
+        margin-right: 8%;
+    }
+}
+
+@media (max-width: 600px) {
+    .itemlistSocial {
+        margin-right: 5%;
+    }
+    .policyList {
+        margin-right: 20%
+    }
+}
+
+@media (max-width: 574px) {
+    .list-item {
+        margin-right: 6%;
+    }
+    .copy {
+        text-align: center;
+    }
+
+    .itemlistSocial {
+        margin-left: 3%;
+    }
+ }
+
+
+
+@media (max-width: 360px) {
+    .itemlistSocial {
+        margin-right: 12px;
+    }
+    .policyList {
+        margin-right: 10%;
+    }
+
+    .copy {
+        text-align: center !important;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .list-item {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .list-item a {
+        font-size: 14px;
+    }
+
+    .itemlistSocial {
+        margin-right: 2%;
+      
+    }
+    .policyList {
+        margin-right: 10%;
+    }
+
+    .copy {
+        text-align: center !important;
+    }
 }
