@@ -1,8 +1,8 @@
 /*import { initialState } from "react-redux-form";*/
 
 const initialState = {
-    contacto: []
-   /* name: '',
+    responseRequest: '',
+    /*name: '',
     lastName: '',
     email: '',
     comment: '',
@@ -23,7 +23,7 @@ export default function (state = initialState, action) {
         case 'ENVIAR_FORM': 
             return {
                 ...state,
-               contacto: [...state.contacto, action.payload]
+               responseRequest: action.payload
 
             }    
         default:
