@@ -14,7 +14,7 @@ function Encabezado () {
                    <a href="#"><img src={logo} alt="logo_ingenia"></img></a>
                 </div>
                 <div>
-                <button className="botonEncabezado" onClick={toggle}> </button>
+                <button className="botonEncabezado" > </button>
                     <ul id="List">
                      <li><a className="link" href="#">ABOUT US</a></li>
                      <li><a className="link" href="#">OUR WORK</a></li>
